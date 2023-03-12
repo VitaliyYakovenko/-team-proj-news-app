@@ -1,0 +1,70 @@
+.date-list {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @include tablet {
+        padding-top: 48px;
+    }
+
+    @include desktop {
+        padding-top: 60px;
+    }
+
+    &__item {
+        margin-bottom: 42px;
+
+        @include tablet {
+            margin-bottom: 48px;
+        }
+
+        @include desktop {
+            margin-bottom: 60px;
+        }
+    }
+
+
+    &__btn {
+        border-bottom: 1px solid var(--line-color);
+        cursor: pointer;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        padding-bottom: 12px;
+
+        font-style: normal;
+        letter-spacing: 0.02em;
+        font-weight: 400;
+        line-height: 1.714;
+        font-family: Poppins;
+        font-size: 14px;
+
+        margin-bottom: 30px;
+
+        @include desktop {
+            margin-bottom: 40px;
+        }
+
+
+        &-text {
+            margin-right: 8px;
+            pointer-events: none;
+        }
+
+        &-elem {
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+
+
+    }
+
+}
+
+.rotate {
+    transition: transform var(--transition);
+    transform: rotateX(180deg);
+}
